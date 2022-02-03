@@ -1,0 +1,27 @@
+{
+  "name": "flux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "ts-node-dev": "^1.1.8",
+    "tsc": "^2.0.4",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/unzipper": "^0.10.5",
+    "axios": "^0.25.0",
+    "get-uri": "^4.0.0",
+    "glob": "^7.2.0",
+    "through2": "^4.0.2",
+    "unzipper": "^0.10.11",
+    "xlsx": "^0.18.0",
+    "xlsx-parse-stream": "^1.0.3",
+    "xlsx-stream-reader": "^1.1.1"
+  },
+  "scripts": {
+    "start": "yarn ts-node src/index.ts"
+  }
+}

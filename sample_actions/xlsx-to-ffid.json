@@ -1,0 +1,26 @@
+{
+  "name": "XLSX for JSON",
+  "flow": [
+    {
+      "name": "Download XLSX",
+      "type": "action",
+      "action": "File/Download",
+      "actionOptions": {
+        "conditions": [
+          "localFileIsNotExists"
+        ],
+        "dest": "downloads",
+        "newFileName": "planilha.xlsx",
+        "url": "http://www.com.br/tabelaoAtendimento.xlsx"
+      }
+    },
+    {
+      "name": "Descompactar ZIP",
+      "type": "action",
+      "action": "ZIP/Unzip",
+      "actionOptions": {
+        "out": "/planilhaOut"
+      }
+    } 
+  ]
+}

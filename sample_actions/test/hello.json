@@ -1,0 +1,21 @@
+{
+  "name": "Hello Flux Test",
+  "flow": [
+    {
+      "name": "Action Hello",
+      "type": "action",
+      "action": "Terminal/Message",
+      "actionOptions": {
+        "message": "Hello World"
+      }
+    },
+    {
+      "name": "Action Bye",
+      "type": "action",
+      "action": "Terminal/Message",
+      "actionOptions": {
+        "message": "Bye World"
+      }
+    }
+  ]
+}
